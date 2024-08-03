@@ -24,16 +24,6 @@ body {
 }
 
 
-/* header {
-    background: url('assets/header-bg.jpg') no-repeat center center;
-    background-size: cover;
-    color: #6e0700;
-    padding: 100px 20px; 
-    position: relative;
-    height: 20px;
-    text-align: center;
-} */
-
 header {
     background: url('assets/header-bg.jpg') no-repeat center center;
     background-size: cover;
