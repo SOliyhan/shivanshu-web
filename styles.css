@@ -25,7 +25,7 @@ body {
 
 
 header {
-    background: url('assets/header-bg.jpg') no-repeat center center;
+    background: url('https://i.ibb.co/2jLZqGx/header-bg.jpg') no-repeat center center;
     background-size: cover;
     color: #6e0700;
     padding: 0; 
@@ -57,7 +57,7 @@ header {
 }
 
 .heading nav a {
-    color: #ffffff;
+    color: #000000;
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
