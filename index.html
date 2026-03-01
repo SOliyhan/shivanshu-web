@@ -2,136 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Shivanshu Oliyhan | Backend Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivanshu's Portfolio</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 smooth-scroll">
-    <header>
-        <div class="heading">
-            <h1 class="fade-in">SHIVANSHU OLIYHAN</h1>
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body>
 
-    <section id="about" class="container mb-2">
-        <h2 class="text-center mb-4 fade-in">About Me</h2>
-        <div class="row">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand" href="#">SO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Stack</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="hero-title">Shivanshu Oliyhan</h1>
+        <p class="hero-subtitle">
+            Backend Engineer • Python • Distributed Systems • Performance Optimization
+        </p>
+        <div class="hero-buttons mt-4">
+            <a href="#projects" class="btn btn-primary btn-lg">View Work</a>
+            <a href="assets/resume.pdf" target="_blank" class="btn btn-outline-light btn-lg">Download Resume</a>
+        </div>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">About Me</h2>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-4 text-center">
+                <img src="assets/img.jpg" alt="Shivanshu" class="profile-img">
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Backend Engineer with 1.7+ years of experience building scalable APIs, 
+                    optimizing database performance, and designing systems capable of handling high-volume data.
+                </p>
+                <p>
+                    Strong expertise in Python, Django, FastAPI, PostgreSQL, and REST architecture. 
+                    Focused on writing clean, maintainable code and improving system efficiency.
+                </p>
+                <p class="highlight">
+                    I design systems that scale — not just endpoints that work.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-dark">
+    <div class="container">
+        <h2 class="section-title text-center">Tech Stack</h2>
+        <div class="row mt-5 g-4">
             <div class="col-md-4">
-                <img src="https://i.ibb.co/Lt89Kzp/img.jpg" alt="Photo" class="img-fluid rounded-circle fade-in">
-            </div>
-            <div class="col-md-8 fade-in">
-                <p>As a dedicated and innovative software developer with a Master’s degree in Technology, I thrive on creating robust backend solutions and tackling complex technical 
-                challenges. With over 1.7 years of experience as a Software Developer Intern at Intel, I have honed my skills in Python, Django, Flask, FastAPI, and various other technologies. 
-                </p>My expertise extends across RESTful API development, JWT authentication, and working with databases such as MongoDB and PostgreSQL. 
-                I am passionate about problem-solving, evident from my extensive problem-solving journey on LeetCode where I’ve tackled over 100 problems. My commitment to continuous learning 
-                and collaborative teamwork drives me to stay at the forefront of technological advancements. I am eager to leverage my skills in dynamic environments and contribute to impactful projects that drive innovation and growth.
-                
-                <section id="skills" class="container mb-4">
-                    <h3 class="text-center mb-4 fade-in">Skills</h3>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Programming Languages</h5>
-                                    <p class="card-text">Python, JavaScript, Java</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Frameworks and Libraries</h5>
-                                    <p class="card-text">Django, Flask, FastAPI, Node.js Express.js</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Database Management</h5>
-                                    <p class="card-text">SQL (PostgreSQL, MySQL), NoSQL (MongoDB)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Others</h5>
-                                    <p class="card-text">RESTful API Design, gRPC, JWT Authentication, Unit Testing with Pytest, Git/GitHub, CI/CD Pipelines, GitHub Actions, Docker/Kubernetes</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="container mb-4">
-        <h2 class="text-center mb-4 fade-in">Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4 fade-in">
-                <div class="card">
-                    <div class="card-img-top placeholder">
-                        <img src="https://i.ibb.co/Jv59WHy/contact.png" alt="Project-1" class="img-fluid fade-in">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="https://github.com/SOliyhan/contacts-api">Contact Management API</a></h5>
-                        <p class="card-text">This is a backend project for managing contacts using Node.js and Express.</p>
-                    </div>
+                <div class="info-card">
+                    <h5>Languages</h5>
+                    <p>Python · JavaScript · Java</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4 fade-in">
-                <div class="card">
-                    <div class="card-img-top placeholder">
-                        <img src="https://i.ibb.co/4tckYqV/pizza.jpg" alt="Pizza" class="img-fluid fade-in">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="https://github.com/SOliyhan/pizza_delivery">Pizza Delivery API</a></h5>
-                        <p class="card-text">API endpoints created for pizza delivery using django rest framework</p>
-                    </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h5>Frameworks</h5>
+                    <p>Django · FastAPI · Flask · Express</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h5>Databases</h5>
+                    <p>PostgreSQL · MySQL · MongoDB · Redis</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h5>DevOps</h5>
+                    <p>Docker · GitHub Actions · CI/CD · Linux</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h5>Concepts</h5>
+                    <p>REST APIs · JWT · System Design · Performance Tuning</p>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section id="contact" class="container mb-4">
-        <h2 class="text-center mb-4 fade-in">Contact</h2>
-        <form action="https://formspree.io/f/xzzpryql" method="POST" class="fade-in">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="_replyto" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <input type="text" name="_gotcha" style="display:none">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </section>
-    
+    </div>
+</section>
 
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Projects</h2>
+        <div class="row mt-5 g-4">
 
-    <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <p>&copy; 2024 Shivanshu Oliyhan. All rights reserved.</p>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <h5>
+                        <a href="https://github.com/SOliyhan/contacts-api" target="_blank">
+                            Contact Management API
+                        </a>
+                    </h5>
+                    <p>
+                        RESTful API with JWT authentication, pagination, 
+                        role-based access control, and modular architecture.
+                        Designed for scalability and clean separation of concerns.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="project-card">
+                    <h5>
+                        <a href="https://github.com/SOliyhan/pizza_delivery" target="_blank">
+                            Pizza Delivery API
+                        </a>
+                    </h5>
+                    <p>
+                        Django REST API managing order lifecycle, authentication, 
+                        and transactional integrity. Structured for maintainability and extensibility.
+                    </p>
+                </div>
+            </div>
+
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
+<!-- CONTACT -->
+<section id="contact" class="section section-dark">
+    <div class="container text-center">
+        <h2 class="section-title">Contact</h2>
+        <p class="mt-4">
+            Open to backend engineering opportunities and system design discussions.
+        </p>
+        <div class="mt-4">
+            <a href="mailto:yourmail@email.com" class="btn btn-primary btn-lg">Email Me</a>
+            <a href="https://github.com/SOliyhan" target="_blank" class="btn btn-outline-light btn-lg">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center py-4">
+    © 2026 Shivanshu Oliyhan
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
